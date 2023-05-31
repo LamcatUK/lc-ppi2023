@@ -1,33 +1,22 @@
-$col-primary: hsl(181, 100%, 14%);
-$col-secondary: hsl(51, 100%, 50%);
-$col-grey: #FFF0F0;
+$col-primary: #1a7aa2;
+$col-secondary: hsl(149, 67%, 46%);
+$col-grey: #F5F5F5;
 
 :root {
 
-    --hsl-green-200: 146, 35%, 58%;
-    --hsl-green-400: 181, 100%, 14%;
-    // --hsl-green-600: 135, 45%, 21%;
-    // --hsl-green-900: 147, 94%, 6%;
+    --hsl-blue-400: 198 72% 37%;
+    --hsl-green-400: 149 67% 46%;
 
-    --col-green-200: hsl( var(--hsl-green-200) );
+    --col-blue-400: hsl( var(--hsl-blue-400) );
     --col-green-400: hsl( var(--hsl-green-400) );
-    // --col-green-600: hsl( var(--hsl-green-600) );
-    // --col-green-900: hsl( var(--hsl-green-900) );
     
-    --hsl-gold-200: 51, 100%, 80%;
-    --hsl-gold-400: 51, 100%, 50%;
-    // --hsl-gold-600: 47, 100%, 50%;
-
-    --col-gold-200: hsl( var(--hsl-gold-200));
-    --col-gold-400: hsl( var(--hsl-gold-400));
-    // --col-gold-600: hsl( var(--hsl-gold-600));
-
     --col-grey-400: hsl(0, 0%, 25%); // #404040;
-    --col-grey-800: rgb(51,51,51); // #333333;
+    --col-grey-800: rgb(51,51,51); // #333333; 
+    --col-grey-900: hsl(198, 7%, 11%);
 
-    --col-primary: var(--col-green-400);
-    --col-secondary: var(--col-gold-400);
-    --col-grey: #FFF0F0;
+    --col-primary: var(--col-blue-400);
+    --col-secondary: var(--col-green-400);
+    --col-grey: #F5F5F5;
 
     --h-top: 76px;
 
@@ -39,8 +28,9 @@ $col-grey: #FFF0F0;
     --fs-900: calc(52px + (72 - 52) * ((100vw - 300px) / (1200 - 300)));
 
     --fw-400: 400;
-    --fw-900: 700;
+    --fw-600: 500;
+    --fw-900: 600;
 
-    --font-body: 'Figtree', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-body: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --font-headings: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

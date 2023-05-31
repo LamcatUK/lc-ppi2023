@@ -5,9 +5,6 @@
 @import "buttons";
 @import "blocks/blocks";
 
-a {
-    color: var(--col-green-400);
-}
 
 a,
 a.noline {
@@ -39,7 +36,7 @@ a.anchor {
     margin-inline-start: 1.5rem;
 }
 
-:not(.share-icons,.social-icons,figure,.cb,.rplg-biz-name) > a[target="_blank"]:not(.btn)::after {
+:not(.share-icons,.social-icons,figure) > a[target="_blank"]:not(.btn)::after {
     content: "\f08e";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
@@ -49,7 +46,6 @@ a.anchor {
 
 
 #breadcrumbs {
-    font-size: 0.889rem;
 }
 
 
@@ -58,9 +54,6 @@ a.anchor {
     font-style: italic;
 }
 
-:not(.share-icons,.social-icons,figure,.cb,.rplg-biz-name) > a[target="_blank"]:not(.btn)::after {
-    font-weight: 600;
-}
 
 // show stuff that overflows horizontally
 // * {
