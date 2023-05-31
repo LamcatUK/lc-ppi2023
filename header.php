@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package lc-rbg2023
+ * @package lc-ppi2023
  */
 
 // Exit if accessed directly.
@@ -38,7 +38,7 @@ defined('ABSPATH') || exit;
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Tidey & Webb Limited",
-            "logo": "https://www.tideyandwebb.co.uk/wp-content/themes/lc-rbg2023/img/tidey-and-webb-og-1200x630.png",
+            "logo": "https://www.tideyandwebb.co.uk/wp-content/themes/lc-ppi2023/img/tidey-and-webb-og-1200x630.png",
             "url": "https://www.tideyandwebb.co.uk/",
             "telephone": "+441403741673",
             "address": {

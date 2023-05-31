@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package lc-rbg2023
+ * @package lc-ppi2023
  */
 
 // Exit if accessed directly.
@@ -16,9 +16,9 @@ defined('ABSPATH') || exit;
     <div class="container-xl" id="footer-content">
         <div class="row pb-4">
             <div class="col-sm-6 col-lg-3">
-                <img src="/wp-content/themes/lc-rbg2023/img/barr-gold-footer.png" width="116" height="175"
+                <img src="/wp-content/themes/lc-ppi2023/img/barr-gold-footer.png" width="116" height="175"
                     alt="Barr Gold Race Grade" class="d-inline">
-                <img src="/wp-content/themes/lc-rbg2023/img/racecheck-gold-award-2022.png" width="130"
+                <img src="/wp-content/themes/lc-ppi2023/img/racecheck-gold-award-2022.png" width="130"
                     alt="Racecheck Gold" class="d-inline">
             </div>
             <div class="col-sm-6 col-lg-6 mb-2">

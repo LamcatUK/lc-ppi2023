@@ -7,12 +7,12 @@ function cb_register_post_types()
      */
 
     $labels = [
-       "name" => esc_html__("Sponsors", "lc-rbg2023"),
-       "singular_name" => esc_html__("Sponsor", "lc-rbg2023"),
+       "name" => esc_html__("Sponsors", "lc-ppi2023"),
+       "singular_name" => esc_html__("Sponsor", "lc-ppi2023"),
     ];
 
     $args = [
-        "label" => esc_html__("Sponsors", "lc-rbg2023"),
+        "label" => esc_html__("Sponsors", "lc-ppi2023"),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -44,12 +44,12 @@ function cb_register_post_types()
      */
 
     $labels = [
-       "name" => esc_html__("People", "lc-rbg2023"),
-       "singular_name" => esc_html__("Person", "lc-rbg2023"),
+       "name" => esc_html__("People", "lc-ppi2023"),
+       "singular_name" => esc_html__("Person", "lc-ppi2023"),
     ];
 
     $args = [
-        "label" => esc_html__("People", "lc-rbg2023"),
+        "label" => esc_html__("People", "lc-ppi2023"),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -81,12 +81,12 @@ function cb_register_post_types()
      */
 
     $labels = [
-        "name" => esc_html__("Charities", "lc-rbg2023"),
-        "singular_name" => esc_html__("Charity", "lc-rbg2023"),
+        "name" => esc_html__("Charities", "lc-ppi2023"),
+        "singular_name" => esc_html__("Charity", "lc-ppi2023"),
     ];
 
     $args = [
-        "label" => esc_html__("Charities", "lc-rbg2023"),
+        "label" => esc_html__("Charities", "lc-ppi2023"),
         "labels" => $labels,
         "description" => "",
         "public" => true,

@@ -55,23 +55,23 @@ if (function_exists('acf_add_options_page')) {
 function widgets_init()
 {
     register_nav_menus(array(
-        'primary_nav' => __('Primary Nav', 'lc-rbg2023'),
+        'primary_nav' => __('Primary Nav', 'lc-ppi2023'),
     ));
     // register_nav_menus(array(
-    //     'top_nav' => __('Top Nav', 'lc-rbg2023'),
+    //     'top_nav' => __('Top Nav', 'lc-ppi2023'),
     // ));
 
     register_nav_menus(array(
-        'footer_menu1' => __('Footer Menu 1', 'lc-rbg2023'),
+        'footer_menu1' => __('Footer Menu 1', 'lc-ppi2023'),
     ));
     // register_nav_menus(array(
-    //     'footer_menu2' => __('Footer Menu 2', 'lc-rbg2023'),
+    //     'footer_menu2' => __('Footer Menu 2', 'lc-ppi2023'),
     // ));
     // register_nav_menus(array(
-    //     'footer_menu3' => __('Footer Menu 3', 'lc-rbg2023'),
+    //     'footer_menu3' => __('Footer Menu 3', 'lc-ppi2023'),
     // ));
     // register_nav_menus(array(
-    //     'footer_menu4' => __('Footer Menu 4', 'lc-rbg2023'),
+    //     'footer_menu4' => __('Footer Menu 4', 'lc-ppi2023'),
     // ));
 
     unregister_sidebar('hero');
