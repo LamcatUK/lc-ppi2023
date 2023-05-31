@@ -1,0 +1,79 @@
+/* figtree-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/figtree-v4-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/figtree-v4-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v20-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+html {
+    // font-size: 18px;
+    font-size: clamp(16px, calc(0.25em + 1vw), 18px);
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: var(--fw-400);
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--col-grey-800);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
+    font-family: var(--font-headings);
+    font-weight: var(--fw-900);
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+
+h1, .h1 {
+    font-size: var(--fs-800); //2.2rem;
+}
+
+h2, .h2 {
+    font-size: var(--fs-700); //1.8rem;
+}
+
+h3, .h3 {
+    font-size: var(--fs-600); //1.4rem;
+}
+
+.font-size-base {
+    font-size: 1rem;
+}
+
+
+sup {
+    font-size: 60%;
+}
+.larger {
+    font-size: 1.25em;
+}
+.smaller {
+    font-size: 0.75em;
+}
+
+.max-ch {
+    max-width: 70ch;
+    margin-right: auto;
+}
+
+
+::selection {
+    background: var(--col-green-400);
+    color: var(--col-gold-400);
+}
