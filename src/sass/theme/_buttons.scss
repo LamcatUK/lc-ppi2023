@@ -1,0 +1,10 @@
+.btn {
+    transition: 
+        background-color var(--transition),
+        color var(--transition);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-450);
+}
+.btn-secondary {
+    color: white;
+}

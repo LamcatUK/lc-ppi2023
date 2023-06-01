@@ -7,4 +7,36 @@
         aspect-ratio: 3 / 1;
         width: 180px;
     }
+
+    font-weight: var(--fw-600);
+
+    .nav-link {
+        color: var(--col-grey-900);
+        position: relative;
+        &:hover,
+        &:focus-visible,
+        &[aria-current="page"] {
+            color: var(--col-primary);
+            &::before {
+                transform: scale(1);    
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scale(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--col-primary);
+            transform-origin: center left;
+            transition: transform var(--transition);
+        }
+    }    
+
+    background: white;
+    @media (min-width: 992px) {
+        background: linear-gradient(180deg, rgba(255 255 255 / 1) 50%, rgba(255 255 255 / 0) 100%);
+    }
 }

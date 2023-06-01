@@ -1,10 +1,10 @@
 {
-    "key": "group_646284a4130a3",
-    "title": "Site-Wide Settings",
+    "key": "group_6478d9bb26200",
+    "title": "LC Hero",
     "fields": [
         {
-            "key": "field_6478d1fefc8bb",
-            "label": "General",
+            "key": "field_6478da1505d78",
+            "label": "Left",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -20,9 +20,29 @@
             "endpoint": 0
         },
         {
-            "key": "field_6478d207fc8bc",
-            "label": "Contact Phone",
-            "name": "contact_phone",
+            "key": "field_6478d9bb05d77",
+            "label": "Title",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Wrap text in span tags to embolden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6478da2005d79",
+            "label": "Intro",
+            "name": "intro",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -40,108 +60,92 @@
             "append": ""
         },
         {
-            "key": "field_6478d212fc8bd",
-            "label": "Contact Email",
-            "name": "contact_email",
+            "key": "field_6478da2605d7a",
+            "label": "CTA",
+            "name": "cta",
             "aria-label": "",
-            "type": "text",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "66",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "array"
         },
         {
-            "key": "field_6478d21cfc8be",
-            "label": "GA Property",
-            "name": "ga_property",
+            "key": "field_6478da3605d7b",
+            "label": "CTA Style",
+            "name": "cta_style",
             "aria-label": "",
-            "type": "text",
+            "type": "radio",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "choices": {
+                "secondary": "Green",
+                "primary": "Blue",
+                "outline": "Outline"
+            },
+            "default_value": "secondary : Green",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
         },
         {
-            "key": "field_6478d228fc8bf",
-            "label": "GTM Property",
-            "name": "gtm_property",
+            "key": "field_6478da5f05d7d",
+            "label": "CTA 2",
+            "name": "cta_2",
             "aria-label": "",
-            "type": "text",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "66",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "array"
         },
         {
-            "key": "field_6478d231fc8c0",
-            "label": "Google Site Verification",
-            "name": "google_site_verification",
+            "key": "field_6478da6a05d7e",
+            "label": "CTA 2 Style",
+            "name": "cta_2_style",
             "aria-label": "",
-            "type": "text",
+            "type": "radio",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6478d250fc8c1",
-            "label": "Bing Site Verification",
-            "name": "bing_site_verification",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
+            "choices": {
+                "secondary": "Green",
+                "primary": "Blue",
+                "outline": "Outline"
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "default_value": "outline : Outline",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
         },
         {
-            "key": "field_6462855531267",
-            "label": "Social",
+            "key": "field_6478da5605d7c",
+            "label": "Right",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -157,11 +161,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_646284d0d25e3",
-            "label": "Facebook URL",
-            "name": "facebook_url",
+            "key": "field_6478da9105d7f",
+            "label": "Image 1",
+            "name": "image_1",
             "aria-label": "",
-            "type": "text",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -170,18 +174,23 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
-            "key": "field_646284dbd25e4",
-            "label": "Instagram URL",
-            "name": "instagram_url",
+            "key": "field_6478da9d05d80",
+            "label": "Image 2",
+            "name": "image_2",
             "aria-label": "",
-            "type": "text",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -190,18 +199,23 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
-            "key": "field_646284e3d25e5",
-            "label": "Twitter URL",
-            "name": "twitter_url",
+            "key": "field_6478da9e05d81",
+            "label": "Image 3",
+            "name": "image_3",
             "aria-label": "",
-            "type": "text",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -210,39 +224,24 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6462858f64672",
-            "label": "YouTube URL",
-            "name": "youtube_url",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         }
     ],
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "block",
                 "operator": "==",
-                "value": "theme-general-settings"
+                "value": "acf\/lc-hero"
             }
         ]
     ],
@@ -255,5 +254,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685639774
+    "modified": 1685642305
 }

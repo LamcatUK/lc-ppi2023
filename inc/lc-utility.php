@@ -29,6 +29,13 @@ add_shortcode('contact_email_icon', function () {
     return;
 });
 
+add_shortcode('contact_phone', function () {
+    if (get_field('contact_phone', 'options')) {
+        return '<a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '">' . get_field('contact_phone', 'options') . '</a>';
+    }
+    return;
+});
+
 function social_icons()
 {
     ob_start();

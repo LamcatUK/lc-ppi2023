@@ -107,10 +107,10 @@ wp_head();
     <?php
 do_action('wp_body_open');
 ?>
-    <header id="wrapper-navbar" class="fixed-top p-0">
-        <nav class="navbar navbar-expand-lg p-0">
+    <header id="wrapper-navbar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-xl py-2 nav-top align-items-end">
-                <div class="text-lg-center logo-container"><a href="/" class="logo" aria-label="PPI Homepage"></a></div>
+                <a href="/" class="text-lg-center logo-container" aria-label="PPI Homepage"></a>
                 <div class="button-container d-lg-none">
                     <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                         aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,15 +122,15 @@ do_action('wp_body_open');
                     <?php
                     wp_nav_menu(
     array(
-                                                'theme_location'  => 'primary_nav',
-                                                'container_class' => 'w-100',
-                                                // 'container_id'    => 'primaryNav',
-                                                'menu_class'      => 'navbar-nav justify-content-around w-100',
-                                                'fallback_cb'     => '',
-                                                'menu_id'         => 'navbarr',
-                                                'depth'           => 3,
-                                                'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                            )
+                                                    'theme_location'  => 'primary_nav',
+                                                    'container_class' => 'w-100',
+                                                    // 'container_id'    => 'primaryNav',
+                                                    'menu_class'      => 'navbar-nav justify-content-around w-100',
+                                                    'fallback_cb'     => '',
+                                                    'menu_id'         => 'navbarr',
+                                                    'depth'           => 3,
+                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                                                )
 );
 ?>
                 </div>

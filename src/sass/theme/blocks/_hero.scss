@@ -1,96 +1,45 @@
-.front-hero {
-    height: 620px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-color: #ccc;
-}
+.hero {
+    min-height: 500px;
+    display: grid;
+    place-content: center;
 
-.hero-title {
-    font-size: var(--fs-900);
-    font-weight: 700;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 0 10px 10px 10px;
-    color: var(--col-gold-400);
-
-    @media screen and (width >= 2000px) {
-        font-size: 90px;
+    &__grid {
+        display: grid;
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        gap: 1rem;
+    }
+    &__left {
+        margin-block: auto;
+        & > * + * {
+            margin-block-end: 2rem;
+        }
+    }
+    &__right {
+        display: grid;
+        grid-template-areas: 
+            "one one"
+            "two three";
+        gap: 0.5rem;
+        place-content: center;
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px;
+        }
+        img:nth-child(1) {
+            grid-area: one;
+            aspect-ratio: 2.5 / 1;
+        }
+        img:nth-child(2) {
+            grid-area: two;
+            aspect-ratio: 3 / 2;
+        }
+        img:nth-child(3) {
+            grid-area: three;
+            aspect-ratio: 3 / 2;
+        }
     }
 }
-  
-.hero-subtitle {
-    font-size: calc(26px + (36 - 26) * ((100vw - 300px) / (1200 - 300)));
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding-inline: 0.5rem;
-
-    @media screen and (width >= 2000px) {
-      font-size: 36px;
-    }
-}
-
-// hero
-// .hero {
-//     position: relative;
-//     min-height: 480px;
-//     display: flex;
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     padding-top: 3rem;
-//     color: #fff;
-//     isolation: isolate;
-//     &__title {
-//         text-transform: uppercase;
-//         font-size: clamp(2rem, 10vw, 3.7rem);
-//         margin-bottom: 0;
-//     }
-//     &__content {
-//         text-transform: uppercase;
-//         font-size: clamp(1.2rem, 10vw, 1.8rem);
-//     }
-// }
-// @media all and (min-width:576px) {
-//     .hero {
-//         padding-top: 2rem;
-//     }
-// }
-// @media all and (min-width:992px) {
-//     .hero {
-//         padding-top: 2rem;
-//         min-height: 500px;
-//     }
-// }
-
-// svg.chevron {
-//     position: absolute;
-//     bottom: -1px;
-//     width: 100%;
-//     height: 100px;
-//     z-index: 20;
-// }
-// .chevron--white {
-//     fill: #FFFFFF;
-// }
-
-// .overlay--light {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #ffffff;
-//     opacity: 0.4;
-//     z-index: -1;
-// }
-// .overlay--dark {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #000000;
-//     opacity: 0.4;
-//     z-index: -1;
-// }

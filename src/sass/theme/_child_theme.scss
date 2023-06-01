@@ -45,6 +45,14 @@ a.anchor {
 }
 
 
+main {
+    margin-top: var(--h-top);
+}
+
+.container-xl > .container-xl {
+    padding-inline: 0;
+}
+
 #breadcrumbs {
 }
 

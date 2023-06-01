@@ -365,4 +365,16 @@ function lc_post_nav()
 <?php
 
 }
+
+
+/* append button to primary nav */
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
+function add_admin_link($items, $args)
+{
+    if ($args->theme_location == 'primary_nav') {
+        $items .= '<li class="menu-item nav-item"><a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '" class="nav-link">' . get_field('contact_phone', 'options') . '</a></li>';
+        $items .= '<li><a class="btn btn-secondary" title="Book Valuation" href="/book-valuation/">Book Valuation</a></li>';
+    }
+    return $items;
+}
 ?>

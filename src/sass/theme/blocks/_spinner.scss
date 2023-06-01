@@ -1,0 +1,26 @@
+.spinner {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    &__card {
+        width: 300px;
+    }
+    &__stat {
+        text-align: center;
+        font-size: var(--fs-800);
+        font-weight: var(--fw-900);
+    }
+    &__desc {
+        text-align: center;
+        max-width: 20ch;
+        margin-inline: auto;
+    }
+
+    &:not(.bg-primary) {
+        .spinner__stat {
+            color: var(--col-blue-400);
+        }
+    }
+}
