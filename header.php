@@ -19,7 +19,13 @@ session_start();
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v12-latin-700.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-600.woff2"
+        as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-500.woff2"
+        as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-regular.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
 if (get_field('ga_property', 'options')) {
@@ -122,15 +128,15 @@ do_action('wp_body_open');
                     <?php
                     wp_nav_menu(
     array(
-                                                    'theme_location'  => 'primary_nav',
-                                                    'container_class' => 'w-100',
-                                                    // 'container_id'    => 'primaryNav',
-                                                    'menu_class'      => 'navbar-nav justify-content-around w-100',
-                                                    'fallback_cb'     => '',
-                                                    'menu_id'         => 'navbarr',
-                                                    'depth'           => 3,
-                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                                )
+                                                                        'theme_location'  => 'primary_nav',
+                                                                        'container_class' => 'w-100',
+                                                                        // 'container_id'    => 'primaryNav',
+                                                                        'menu_class'      => 'navbar-nav justify-content-around w-100',
+                                                                        'fallback_cb'     => '',
+                                                                        'menu_id'         => 'navbarr',
+                                                                        'depth'           => 3,
+                                                                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                                                                    )
 );
 ?>
                 </div>

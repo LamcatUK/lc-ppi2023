@@ -22,6 +22,55 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_feature_text',
+            'title'				=> __('LC Feature Text'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_feature_text.php',
+            'keywords'			=> array( 'feature', 'text' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_lii_tabs',
+            'title'				=> __('LC Landlords/Investors/Individuals Tabs'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_lii_tabs.php',
+            'keywords'			=> array( 'landlords', 'investors', 'individuals' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_accreditations',
+            'title'				=> __('LC Accreditations'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_accreditations.php',
+            'keywords'			=> array( 'accreditations' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_options_cards',
+            'title'				=> __('LC Options Cards'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_options_cards.php',
+            'keywords'			=> array( 'options', 'cards' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_text_features',
+            'title'				=> __('LC Text & 4 Features'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_text_features.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');

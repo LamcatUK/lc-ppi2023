@@ -36,7 +36,7 @@ a.anchor {
     margin-inline-start: 1.5rem;
 }
 
-:not(.share-icons,.social-icons,figure) > a[target="_blank"]:not(.btn)::after {
+:not(.share-icons,.social-icons,figure,.accreditations__badge) > a[target="_blank"]:not(.btn)::after{
     content: "\f08e";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;

@@ -1,0 +1,38 @@
+.text_features {
+
+    &__ptitle {
+        max-width: 14ch;
+    }
+    &__content {
+        max-width: 50ch;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    &__card {
+        border: 1px solid var(--col-grey-400);
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    &__icon {
+        height: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__title {
+        font-size: var(--fs-450);
+    }
+    &__content {
+
+    }
+    
+}

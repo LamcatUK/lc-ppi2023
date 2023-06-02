@@ -1,0 +1,22 @@
+.options_cards {
+    &__intro {
+        margin-bottom: 2rem;
+        max-width: min(80ch,90vw);
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    &__card {
+        border: 1px solid var(--col-primary);
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+    }
+    h3 {
+        font-size: var(--fs-500);
+        color: var(--col-primary);
+    }
+}
