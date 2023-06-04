@@ -15,9 +15,38 @@ defined('ABSPATH') || exit;
 <footer class="footer pt-5">
     <div class="container-xl" id="footer-content">
         <div class="row pb-4">
-            <div class="col-sm-6 col-lg-6 mb-2">
-                <strong>Quick Links</strong>
-                <?php wp_nav_menu(array('theme_location' => 'footer_menu1', 'menu_class' => 'cols-lg-2')); ?>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <img src="<?=get_stylesheet_directory_uri()?>/img/ppi-logo--wo.svg"
+                    alt="">
+                <p class="fs-200">With years of experience in the property industry, we are dedicated to providing
+                    exceptional service
+                    to our clients in their property selling and finance journey.</p>
+                <strong>Keep in Touch</strong>
+                <div class="social-icons">
+                    <?=do_shortcode('[social_icons]')?>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <strong>Contact Us</strong>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                        <?=do_shortcode('[contact_phone]')?>
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
+                        <?=do_shortcode('[contact_email]')?>
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span>
+                        <?=get_field('contact_address', 'options')?>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-2 mb-2">
+                <strong>Useful Links</strong>
+                <?php wp_nav_menu(array('theme_location' => 'footer_menu1')); ?>
+            </div>
+            <div class="col-sm-6 col-lg-2 mb-2">
+                <strong>Information</strong>
+                <?php wp_nav_menu(array('theme_location' => 'footer_menu2')); ?>
             </div>
         </div>
     </div>

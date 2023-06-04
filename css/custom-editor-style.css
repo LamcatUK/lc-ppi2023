@@ -9,8 +9,9 @@
   --col-grey-900: hsl(210, 8%, 5%);
   --col-primary: var(--col-blue-400);
   --col-secondary: var(--col-green-400);
-  --col-grey: #F5F5F5;
+  --col-grey: #F4F8FA;
   --h-top: 92px;
+  --fs-100: clamp(0.64rem, calc(0.66rem + -0.02vw), 0.65rem);
   --fs-200: clamp(0.80rem, calc(0.77rem + 0.17vw), 0.90rem);
   --fs-400: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
   --fs-450: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);

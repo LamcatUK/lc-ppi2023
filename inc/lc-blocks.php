@@ -71,6 +71,87 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_compare_table',
+            'title'				=> __('LC Compare Table'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_compare_table.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_pushthrough',
+            'title'				=> __('LC Pushthrough'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_pushthrough.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_areas',
+            'title'				=> __('LC Areas'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_areas.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_calc',
+            'title'				=> __('LC Calculator'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_calc.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_testimonials',
+            'title'				=> __('LC Testimonials'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_testimonials.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_image_cta',
+            'title'				=> __('LC Image CTA'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_image_cta.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_faqs',
+            'title'				=> __('LC FAQs'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_faqs.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_latest_insights',
+            'title'				=> __('LC Latest Insights'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_latest_insights.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_form_block',
+            'title'				=> __('LC Form Block'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_form_block.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');

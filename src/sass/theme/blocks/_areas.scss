@@ -1,0 +1,25 @@
+.areas {
+    &__content {
+        margin-bottom: 2rem;
+        max-width: 80ch;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    &__areas {
+        padding-inline-start: 0;
+        list-style: none;
+        columns: 3;
+        color: var(--col-primary);
+        li {
+            font-size: var(--fs-450);
+            font-weight: var(--fw-600);
+            margin-bottom: 0.5rem;
+        }
+    }
+    &__map {
+
+    }
+}

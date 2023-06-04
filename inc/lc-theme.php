@@ -66,9 +66,9 @@ function widgets_init()
     register_nav_menus(array(
         'footer_menu1' => __('Footer Menu 1', 'lc-ppi2023'),
     ));
-    // register_nav_menus(array(
-    //     'footer_menu2' => __('Footer Menu 2', 'lc-ppi2023'),
-    // ));
+    register_nav_menus(array(
+        'footer_menu2' => __('Footer Menu 2', 'lc-ppi2023'),
+    ));
     // register_nav_menus(array(
     //     'footer_menu3' => __('Footer Menu 3', 'lc-ppi2023'),
     // ));

@@ -3,53 +3,16 @@
 function cb_register_post_types()
 {
     /**
-     * Post Type: Case Studies.
+     * Post Type: Testimonials.
      */
 
     $labels = [
-       "name" => esc_html__("Sponsors", "lc-ppi2023"),
-       "singular_name" => esc_html__("Sponsor", "lc-ppi2023"),
+       "name" => esc_html__("Testimonials", "lc-ppi2023"),
+       "singular_name" => esc_html__("Testimonial", "lc-ppi2023"),
     ];
 
     $args = [
-        "label" => esc_html__("Sponsors", "lc-ppi2023"),
-        "labels" => $labels,
-        "description" => "",
-        "public" => true,
-        "publicly_queryable" => true,
-        "show_ui" => true,
-        "show_in_rest" => true,
-        "rest_base" => "",
-        "rest_controller_class" => "WP_REST_Posts_Controller",
-        "rest_namespace" => "wp/v2",
-        "has_archive" => true,
-        "show_in_menu" => true,
-        "show_in_nav_menus" => true,
-        "delete_with_user" => false,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "can_export" => true,
-        "rewrite" => [ "slug" => "sponsors", "with_front" => false ],
-        "query_var" => true,
-        "supports" => [ "title", "editor", "thumbnail" ],
-        "show_in_graphql" => false,
-    ];
-
-    register_post_type("sponsors", $args);
-
-    /**
-     * Post Type: People.
-     */
-
-    $labels = [
-       "name" => esc_html__("People", "lc-ppi2023"),
-       "singular_name" => esc_html__("Person", "lc-ppi2023"),
-    ];
-
-    $args = [
-        "label" => esc_html__("People", "lc-ppi2023"),
+        "label" => esc_html__("Testimonials", "lc-ppi2023"),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -74,44 +37,7 @@ function cb_register_post_types()
         "show_in_graphql" => false,
     ];
 
-    register_post_type("people", $args);
-
-    /**
-     * Post Type: Sponsors.
-     */
-
-    $labels = [
-        "name" => esc_html__("Charities", "lc-ppi2023"),
-        "singular_name" => esc_html__("Charity", "lc-ppi2023"),
-    ];
-
-    $args = [
-        "label" => esc_html__("Charities", "lc-ppi2023"),
-        "labels" => $labels,
-        "description" => "",
-        "public" => true,
-        "publicly_queryable" => false,
-        "show_ui" => true,
-        "show_in_rest" => true,
-        "rest_base" => "",
-        "rest_controller_class" => "WP_REST_Posts_Controller",
-        "rest_namespace" => "wp/v2",
-        "has_archive" => true,
-        "show_in_menu" => true,
-        "show_in_nav_menus" => true,
-        "delete_with_user" => false,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "can_export" => true,
-        "rewrite" => [ "slug" => "charities", "with_front" => false ],
-        "query_var" => true,
-        "supports" => [ "title", "editor" ],
-        "show_in_graphql" => false,
-    ];
-
-    register_post_type("charities", $args);
+    register_post_type("testimonials", $args);
 }
 
 add_action('init', 'cb_register_post_types');

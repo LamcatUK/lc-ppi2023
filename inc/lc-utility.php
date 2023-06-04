@@ -253,7 +253,7 @@ function enable_strict_transport_security_hsts_header()
 add_action('send_headers', 'enable_strict_transport_security_hsts_header');
 
 
-function cb_list($field)
+function lc_list($field)
 {
     ob_start();
     $field = strip_tags($field, '<br />');

@@ -3,6 +3,24 @@
     "title": "LC Hero",
     "fields": [
         {
+            "key": "field_647cac595d953",
+            "label": "LC Hero",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
             "key": "field_6478da1505d78",
             "label": "Left",
             "name": "",
@@ -254,5 +272,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685642305
+    "modified": 1685892196
 }
