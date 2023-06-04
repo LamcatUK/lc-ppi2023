@@ -3,6 +3,7 @@
 @import "header";
 @import "footer";
 @import "buttons";
+@import "resources";
 @import "blocks/blocks";
 
 
@@ -29,6 +30,20 @@ a.anchor {
     padding-top: 1rem;
     a:not(:last-of-type) {
         margin-right: 0.5rem;
+    }
+}
+
+ul:not([class]) {
+    list-style: none; /* Remove default bullets */
+    li::before {
+        content: "\f138";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        font-family: "Font Awesome 6 Free";
+        color: var(--col-primary); /* Change the color */
+        font-weight: 600; /* If you want it to be bold */
+        font-size: var(--fs-200);
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1.5rem; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
     }
 }
 

@@ -4,11 +4,19 @@ function acf_blocks()
     if (function_exists('acf_register_block_type')) {
         acf_register_block_type(array(
             'name'				=> 'lc_hero',
-            'title'				=> __('LC Hero'),
+            'title'				=> __('LC Hero - 3 Image'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/lc_hero.php',
-            'keywords'			=> array( 'hero' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_secondary_hero',
+            'title'				=> __('LC Hero - 1 Image'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_secondary_hero.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -18,7 +26,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/lc_spinner.php',
-            'keywords'			=> array( 'spinner' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -28,7 +35,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/lc_feature_text.php',
-            'keywords'			=> array( 'feature', 'text' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -48,7 +54,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/lc_accreditations.php',
-            'keywords'			=> array( 'accreditations' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -58,7 +63,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/lc_options_cards.php',
-            'keywords'			=> array( 'options', 'cards' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -152,6 +156,15 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_text_image',
+            'title'				=> __('LC Text/Image'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_text_image.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');
@@ -185,4 +198,6 @@ function modify_core_add_container($attributes, $content)
     $content = ob_get_clean();
     return $content;
 }
+
+
 ?>

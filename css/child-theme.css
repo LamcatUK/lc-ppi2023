@@ -22348,6 +22348,10 @@ sup {
   color: white;
 }
 
+.bg--grey {
+  background-color: var(--col-grey);
+}
+
 #wrapper-navbar {
   font-weight: var(--fw-600);
   background: white;
@@ -22450,6 +22454,19 @@ footer #footer-content {
   background-color: var(--col-grey-900);
 }
 
+.index_hero {
+  min-height: 400px;
+  display: grid;
+  place-content: center;
+}
+.index_hero * {
+  text-align: center;
+}
+.index_hero .container-xl > div {
+  max-width: 60ch;
+  margin: auto;
+}
+
 .hero {
   min-height: 500px;
   display: grid;
@@ -22496,6 +22513,10 @@ footer #footer-content {
 .hero__right img:nth-child(3) {
   grid-area: three;
   aspect-ratio: 3/2;
+}
+.hero__right.hero__secondary img {
+  aspect-ratio: 6/4;
+  border-radius: 12px;
 }
 
 .spinner__container {
@@ -22946,6 +22967,10 @@ footer #footer-content {
   width: 80ch;
 }
 
+.text_image__image {
+  border-radius: 12px;
+}
+
 a,
 a.noline {
   text-decoration: none;
@@ -22973,6 +22998,20 @@ a.anchor {
 }
 .share-icons a:not(:last-of-type) {
   margin-right: 0.5rem;
+}
+
+ul:not([class]) {
+  list-style: none; /* Remove default bullets */
+}
+ul:not([class]) li::before {
+  content: "\f138"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-family: "Font Awesome 6 Free";
+  color: var(--col-primary); /* Change the color */
+  font-weight: 600; /* If you want it to be bold */
+  font-size: var(--fs-200);
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.5rem; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .fa-ul {

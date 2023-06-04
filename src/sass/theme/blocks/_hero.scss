@@ -41,5 +41,11 @@
             grid-area: three;
             aspect-ratio: 3 / 2;
         }
+        &.hero__secondary {
+            img {
+                aspect-ratio: 6 / 4;
+                border-radius: 12px;
+            }
+        }
     }
 }

@@ -1,10 +1,10 @@
 {
-    "key": "group_6478d9bb26200",
-    "title": "LC Hero - 3 Image",
+    "key": "group_647cdcc4c1689",
+    "title": "LC Hero - 1 Image",
     "fields": [
         {
-            "key": "field_647cac595d953",
-            "label": "LC Hero - 3 Image",
+            "key": "field_647cdcc4c557b",
+            "label": "LC Hero - 1 Image",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -21,7 +21,7 @@
             "esc_html": 0
         },
         {
-            "key": "field_6478da1505d78",
+            "key": "field_647cdcc4c9213",
             "label": "Left",
             "name": "",
             "aria-label": "",
@@ -38,7 +38,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6478d9bb05d77",
+            "key": "field_647cdcc4ccea9",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -58,11 +58,11 @@
             "append": ""
         },
         {
-            "key": "field_6478da2005d79",
+            "key": "field_647cdcc4d0b16",
             "label": "Intro",
             "name": "intro",
             "aria-label": "",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -72,13 +72,13 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
-            "key": "field_6478da2605d7a",
+            "key": "field_647cdcc4d47c1",
             "label": "CTA",
             "name": "cta",
             "aria-label": "",
@@ -94,7 +94,7 @@
             "return_format": "array"
         },
         {
-            "key": "field_6478da3605d7b",
+            "key": "field_647cdcc4d843c",
             "label": "CTA Style",
             "name": "cta_style",
             "aria-label": "",
@@ -120,7 +120,7 @@
             "save_other_choice": 0
         },
         {
-            "key": "field_6478da5f05d7d",
+            "key": "field_647cdcc4dc0e0",
             "label": "CTA 2",
             "name": "cta_2",
             "aria-label": "",
@@ -136,7 +136,7 @@
             "return_format": "array"
         },
         {
-            "key": "field_6478da6a05d7e",
+            "key": "field_647cdcc4dfd7a",
             "label": "CTA 2 Style",
             "name": "cta_2_style",
             "aria-label": "",
@@ -162,7 +162,7 @@
             "save_other_choice": 0
         },
         {
-            "key": "field_6478da5605d7c",
+            "key": "field_647cdcc4e3a0f",
             "label": "Right",
             "name": "",
             "aria-label": "",
@@ -179,59 +179,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_6478da9105d7f",
+            "key": "field_647cdcc4e766d",
             "label": "Image 1",
             "name": "image_1",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_6478da9d05d80",
-            "label": "Image 2",
-            "name": "image_2",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_6478da9e05d81",
-            "label": "Image 3",
-            "name": "image_3",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -259,7 +209,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/lc-hero"
+                "value": "acf\/lc-secondary-hero"
             }
         ]
     ],
@@ -272,5 +222,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685904573
+    "modified": 1685904863
 }

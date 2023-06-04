@@ -1,6 +1,9 @@
+<?php
+$class = get_field('center')[0] ?? null;
+?>
 <section class="compare_table py-5">
     <div class="container-xl">
-        <h2>
+        <h2 class="<?=$class?>">
             <?=get_field('title')?>
         </h2>
         <div class="compare_table__table">
@@ -37,7 +40,7 @@
                 </div>
                 <?php
             }
-            ?>
+?>
             </div>
         </div>
         <div class="compare_table__summary">
