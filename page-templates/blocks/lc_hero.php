@@ -5,6 +5,7 @@
                 <h1><?=get_field('title')?></h1>
                 <div><?=get_field('intro')?>
                 </div>
+                <div class="hero__buttons">
                 <?php
                 if (get_field('cta')) {
                     $link = get_field('cta');
@@ -22,6 +23,7 @@
                     <?
                 }
                 ?>
+                </div>
             </div>
             <div class="hero__right">
                 <?php

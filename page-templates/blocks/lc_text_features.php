@@ -5,20 +5,22 @@
             <div class="text_features__left">
                 <h2 class="text_features__ptitle d-none d-md-block"><?=get_field('title')?></h2>
                 <div class="text_features__content pb-4"><?=get_field('content')?></div>
-                <?php
-                if (get_field('cta_1')) {
-                    $link = get_field('cta_1');
-                    ?>
+                <div class="text_features__buttons">
+                    <?php
+                    if (get_field('cta_1')) {
+                        $link = get_field('cta_1');
+                        ?>
                     <a href="<?=$link['url']?>" target="<?=$link['target']?>" class="btn btn-secondary"><?=$link['title']?></a>
-                    <?
-                }
-                if (get_field('cta_2')) {
-                    $link = get_field('cta_2');
-                    ?>
+                        <?
+                    }
+                    if (get_field('cta_2')) {
+                        $link = get_field('cta_2');
+                        ?>
                     <a href="<?=$link['url']?>" target="<?=$link['target']?>" class="btn btn-outline"><?=$link['title']?></a>
-                    <?
-                }
-                ?>
+                        <?
+                    }
+                    ?>
+                </div>
             </div>
             <div class="text_features__right">
                 <div class="text_features__card">

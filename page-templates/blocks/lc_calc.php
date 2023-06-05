@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="/book-valuation" class="btn btn-secondary">Free Valuation</a>
+            <a href="/book-valuation" class="btn btn-secondary w-100 w-md-auto">Free Valuation</a>
         </div>
     </div>
 </section>

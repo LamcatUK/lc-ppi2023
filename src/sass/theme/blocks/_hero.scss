@@ -48,4 +48,16 @@
             }
         }
     }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    @media (min-width:576px) {
+        &__buttons {
+            flex-direction: row;
+        }
+    }
 }

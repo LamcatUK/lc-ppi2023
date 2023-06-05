@@ -1,4 +1,10 @@
 #wrapper-navbar {
+
+    transition: transform 0.3s ease-in-out;
+    &.hide {
+        transform: translateY(-140px);
+    }
+
     .logo-container {
         background-image: url(../img/ppi-logo.svg);
         background-size: contain;

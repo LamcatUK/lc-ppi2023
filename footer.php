@@ -15,10 +15,11 @@ defined('ABSPATH') || exit;
 <footer class="footer pt-5">
     <div class="container-xl" id="footer-content">
         <div class="row pb-4">
-            <div class="col-sm-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-3">
                 <img src="<?=get_stylesheet_directory_uri()?>/img/ppi-logo--wo.svg"
                     alt="">
-                <p class="fs-200">With years of experience in the property industry, we are dedicated to providing
+                <p class="fs-200" style="max-width:44ch">With years of experience in the property industry, we are
+                    dedicated to providing
                     exceptional service
                     to our clients in their property selling and finance journey.</p>
                 <strong>Keep in Touch</strong>
@@ -26,7 +27,7 @@ defined('ABSPATH') || exit;
                     <?=do_shortcode('[social_icons]')?>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-3">
                 <strong>Contact Us</strong>
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
@@ -56,7 +57,7 @@ defined('ABSPATH') || exit;
         <div class="row">
             <div class="col-md-6 mb-2 mb-md-0">
                 &copy; <?=date('Y')?> Property
-                Portfolio Investors Ltd. Registered in England No. XXXXXXX
+                Portfolio Investors Ltd. Registered in England No. 14841867
             </div>
             <div class="col-md-6 text-md-end">
                 <a href="/privacy-policy/">Privacy Policy</a> | <a href="/cookie-policy/">Cookie Policy</a>

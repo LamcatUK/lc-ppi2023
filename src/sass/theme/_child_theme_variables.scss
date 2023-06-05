@@ -18,6 +18,7 @@ $utilities, ( "width": map-merge(
     map-get( $utilities, "width"), ( responsive: true ),),)
 );
 
+
 // $purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
 // $primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
 // grid

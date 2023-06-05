@@ -50,22 +50,24 @@ if (get_field('order') == 'image-text') {
                 <div class="mb-4">
                     <?=get_field('content')?>
                 </div>
-                <?php
+                <div class="text_image__buttons">
+                    <?php
                 if (get_field('cta')) {
                     $link = get_field('cta');
                     ?>
-                <a href="<?=$link['url']?>"
-                    class="btn btn-secondary"><?=$link['title']?></a>
-                <?php
+                    <a href="<?=$link['url']?>"
+                        class="btn btn-secondary"><?=$link['title']?></a>
+                    <?php
                 }
                 if (get_field('cta_2')) {
                     $link = get_field('cta_2');
                     ?>
-                <a href="<?=$link['url']?>"
-                    class="btn btn-outline"><?=$link['title']?></a>
-                <?php
+                    <a href="<?=$link['url']?>"
+                        class="btn btn-outline"><?=$link['title']?></a>
+                    <?php
                 }
 ?>
+                </div>
             </div>
             <div
                 class="<?=$splitImage?> <?=$orderImage?> text-center">
