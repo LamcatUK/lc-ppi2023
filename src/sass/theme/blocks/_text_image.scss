@@ -1,8 +1,8 @@
 .text_image {
     &__image {
-        border-radius: 12px;
+        border-radius: var(--border-2);
     }
-    
+
     &__buttons {
         display: flex;
         flex-direction: column;

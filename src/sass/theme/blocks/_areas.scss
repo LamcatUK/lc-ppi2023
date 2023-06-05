@@ -7,9 +7,9 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr;
-        grid-template-areas: "map" "areas";
+        grid-template-areas: "areas" "map";
         @media (min-width:992px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.6fr 1fr;
             grid-template-areas: "areas map";
         }
     }
@@ -30,5 +30,6 @@
     }
     &__map {
         grid-area: map;
+        margin: auto;
     }
 }

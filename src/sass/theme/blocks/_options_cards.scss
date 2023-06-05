@@ -17,7 +17,7 @@
 
     &__card {
         border: 1px solid var(--col-primary);
-        border-radius: 12px;
+        border-radius: var(--border-2);
         padding: 1rem;
         text-align: center;
     }

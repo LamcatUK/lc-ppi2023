@@ -1,7 +1,7 @@
 .compare_table {
     &__table {
         border: 1px solid var(--col-grey-400);
-        border-radius: 12px;
+        border-radius: var(--border-2);
         padding: 1rem;
         margin-bottom: 1rem;
     }
@@ -12,7 +12,7 @@
         gap: 1rem;
         align-items: center;
         padding: 1rem;
-        border-radius: 6px;
+        border-radius: var(--border-1);
         margin-bottom: 0.5rem;
 
         h3 {
@@ -101,7 +101,7 @@
         gap: 1rem;
         align-items: center;
         padding: 1rem;
-        border-radius: 12px;
+        border-radius: var(--border-2);
         font-size: var(--fs-500);
         font-weight: var(--fw-600);
         text-transform: uppercase;

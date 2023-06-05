@@ -11,7 +11,7 @@
         z-index: -1;
     }
     &__content {
-        border-radius: 12px;
+        border-radius: var(--border-2);
         padding: 2rem;
         background-color: #fff;
         width: min(700px,90vw);

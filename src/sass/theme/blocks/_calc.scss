@@ -10,7 +10,6 @@
         display: grid;
         column-gap: 4rem;
         row-gap: 2rem;
-        border-radius: 0.5rem;
         margin-inline: auto;
         margin-bottom: 3rem;
         @media(min-width:768px) {
@@ -35,7 +34,7 @@
     &__output {
         background-color: var(--col-primary);
         color: white;
-        border-radius: 12px;
+        border-radius: var(--border-2);
         padding: 2rem 1rem;
         display: flex;
         flex-direction: column;

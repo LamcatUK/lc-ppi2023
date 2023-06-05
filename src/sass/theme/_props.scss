@@ -1,18 +1,19 @@
 $col-primary: #1a7aa2;
-$col-secondary: hsl(149, 67%, 46%);
+$col-secondary: rgb(39, 196, 115);
 $col-grey: #F5F5F5;
 
 :root {
 
     --hsl-blue-400: 198 72% 37%;
     --hsl-green-400: 149 67% 46%;
+    --hsl-grey-900: 210 8% 5%;
 
     --col-blue-400: hsl( var(--hsl-blue-400) );
     --col-green-400: hsl( var(--hsl-green-400) );
     
     --col-grey-400: hsl(0, 0%, 25%); // #404040;
     --col-grey-800: rgb(51,51,51); // #333333; 
-    --col-grey-900: hsl(210, 8%, 5%);
+    --col-grey-900: hsl( var(--hsl-grey-900) );
 
     --col-primary: var(--col-blue-400);
     --col-secondary: var(--col-green-400);
@@ -45,5 +46,8 @@ $col-grey: #F5F5F5;
     --font-headings: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     --transition: 250ms ease-out;
+
+    --border-1: 6px;
+    --border-2: 12px;
 
 }
