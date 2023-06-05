@@ -1,4 +1,4 @@
-<section class="accreditations pt-2 pb-4">
+<section class="accreditations pt-4 pb-5">
     <div class="container-xl">
         <div class="accreditations__slider">
             <div class="accreditations__badge"><img

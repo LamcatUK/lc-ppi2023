@@ -62,7 +62,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #1a7aa2;
-  --bs-secondary: rgb(39, 196, 115);
+  --bs-secondary: #27c473;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -3642,8 +3642,8 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: rgb(39, 196, 115);
-  --bs-btn-border-color: rgb(39, 196, 115);
+  --bs-btn-bg: #27c473;
+  --bs-btn-border-color: #27c473;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #47cd88;
   --bs-btn-hover-border-color: #3dca81;
@@ -3653,8 +3653,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: #3dca81;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: rgb(39, 196, 115);
-  --bs-btn-disabled-border-color: rgb(39, 196, 115);
+  --bs-btn-disabled-bg: #27c473;
+  --bs-btn-disabled-border-color: #27c473;
 }
 
 .btn-success {
@@ -3777,19 +3777,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary, .wpcf7 input[type=submit] {
-  --bs-btn-color: rgb(39, 196, 115);
-  --bs-btn-border-color: rgb(39, 196, 115);
+  --bs-btn-color: #27c473;
+  --bs-btn-border-color: #27c473;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(39, 196, 115);
-  --bs-btn-hover-border-color: rgb(39, 196, 115);
+  --bs-btn-hover-bg: #27c473;
+  --bs-btn-hover-border-color: #27c473;
   --bs-btn-focus-shadow-rgb: 39, 196, 115;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(39, 196, 115);
-  --bs-btn-active-border-color: rgb(39, 196, 115);
+  --bs-btn-active-bg: #27c473;
+  --bs-btn-active-border-color: #27c473;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgb(39, 196, 115);
+  --bs-btn-disabled-color: #27c473;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(39, 196, 115);
+  --bs-btn-disabled-border-color: #27c473;
   --bs-gradient: none;
 }
 
@@ -7500,7 +7500,7 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: rgb(39, 196, 115) !important;
+  color: #27c473 !important;
 }
 .link-secondary:hover, .link-secondary:focus {
   color: #52d08f !important;
@@ -22381,17 +22381,41 @@ sup {
 #wrapper-navbar .nav-link:hover::before, #wrapper-navbar .nav-link:focus-visible::before, #wrapper-navbar .nav-link[aria-current=page]::before {
   transform: scale(1);
 }
-#wrapper-navbar .nav-link::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scale(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--col-primary);
-  transform-origin: center left;
-  transition: transform var(--transition);
+@media (min-width: 992px) {
+  #wrapper-navbar .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--col-primary);
+    transform-origin: center left;
+    transition: transform var(--transition);
+  }
+}
+#wrapper-navbar .current-menu-ancestor > .nav-link {
+  color: var(--col-primary);
+}
+#wrapper-navbar .current-menu-ancestor > .nav-link::before {
+  transform: scale(1);
+}
+#wrapper-navbar .current-menu-ancestor .dropdown-item[aria-current=page] {
+  color: var(--col-primary);
+  font-weight: var(--fw-900);
+}
+@media (max-width: 991px) {
+  #wrapper-navbar #navbar #navbarr {
+    height: 100vh;
+    font-size: var(--fs-500);
+  }
+  #wrapper-navbar #navbar #navbarr li {
+    padding-block: 0.5rem;
+  }
+  #wrapper-navbar #navbar #navbarr li .btn, #wrapper-navbar #navbar #navbarr li .wpcf7 input[type=submit], .wpcf7 #wrapper-navbar #navbar #navbarr li input[type=submit] {
+    display: block;
+  }
 }
 
 footer {
@@ -22510,7 +22534,7 @@ footer #footer-content {
 }
 
 .hero {
-  min-height: 500px;
+  min-height: 550px;
   display: grid;
   place-content: center;
 }
@@ -23353,8 +23377,22 @@ footer #footer-content {
 }
 .latest_insights__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .latest_insights__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .latest_insights__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .latest_insights__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .latest_insights__card {
   background-color: #fff;
@@ -23381,8 +23419,7 @@ footer #footer-content {
   justify-self: self-start;
 }
 .latest_insights__card--first {
-  grid-column: 1/5;
-  aspect-ratio: 5/2;
+  aspect-ratio: 1;
   padding: 2rem;
   display: grid;
   place-content: end;
@@ -23396,6 +23433,24 @@ footer #footer-content {
   isolation: isolate;
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  .latest_insights__card--first {
+    aspect-ratio: 3/2;
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 992px) {
+  .latest_insights__card--first {
+    aspect-ratio: 4/2;
+    grid-column: 1/4;
+  }
+}
+@media (min-width: 1200px) {
+  .latest_insights__card--first {
+    aspect-ratio: 5/2;
+    grid-column: 1/5;
+  }
+}
 .latest_insights__card--first:hover {
   color: #fff;
 }
@@ -23406,8 +23461,24 @@ footer #footer-content {
 .latest_insights__card--first .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, hsl(var(--hsl-grey-900)/0.6) 10%, transparent 33%);
+  background: hsl(var(--hsl-grey-900)/0.6);
+  background: linear-gradient(0deg, hsl(var(--hsl-grey-900)/0.6) 75%, transparent 100%);
   z-index: -1;
+}
+@media (min-width: 546px) {
+  .latest_insights__card--first .overlay {
+    background: linear-gradient(0deg, hsl(var(--hsl-grey-900)/0.6) 50%, transparent 75%);
+  }
+}
+@media (min-width: 768px) {
+  .latest_insights__card--first .overlay {
+    background: linear-gradient(0deg, hsl(var(--hsl-grey-900)/0.6) 30%, transparent 50%);
+  }
+}
+@media (min-width: 992px) {
+  .latest_insights__card--first .overlay {
+    background: linear-gradient(0deg, hsl(var(--hsl-grey-900)/0.6) 10%, transparent 40%);
+  }
 }
 
 .form_block .intro {
@@ -23751,16 +23822,16 @@ for (; i < all.length; i++) {
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: rgb(39, 196, 115);
+  color: #27c473;
 }
 
 .has-secondary-background-color {
-  background-color: rgb(39, 196, 115);
-  border-color: rgb(39, 196, 115);
+  background-color: #27c473;
+  border-color: #27c473;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-secondary-color {
-  color: rgb(39, 196, 115);
+  color: #27c473;
 }
 
 .has-success-color,

@@ -6772,6 +6772,7 @@
 	  var direction = 0;
 	  var prevDirection = 0;
 	  var header = document.getElementById('wrapper-navbar');
+	  var dropdowns = document.querySelectorAll('.dropdown-menu');
 	  var checkScroll = function () {
 	    /*
 	    ** Find the direction of scroll
@@ -6796,6 +6797,9 @@
 	      //replace 52 with the height of your header in px
 	      if (!document.getElementById('navbar').classList.contains("show")) {
 	        header.classList.add('hide');
+	        dropdowns.forEach(ul => {
+	          ul.classList.remove('show');
+	        });
 	        prevDirection = direction;
 	      }
 	    } else if (direction === 1) {

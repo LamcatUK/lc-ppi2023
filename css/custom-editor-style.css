@@ -463,7 +463,7 @@ progress {
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #1a7aa2;
-  --bs-secondary: rgb(39, 196, 115);
+  --bs-secondary: #27c473;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -903,7 +903,7 @@ progress {
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #1a7aa2;
-  --bs-secondary: rgb(39, 196, 115);
+  --bs-secondary: #27c473;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -1001,7 +1001,7 @@ progress {
 }
 
 .link-secondary {
-  color: rgb(39, 196, 115) !important;
+  color: #27c473 !important;
 }
 .link-secondary:hover, .link-secondary:focus {
   color: #52d08f !important;
@@ -5410,16 +5410,16 @@ progress {
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: rgb(39, 196, 115);
+  color: #27c473;
 }
 
 .has-secondary-background-color {
-  background-color: rgb(39, 196, 115);
-  border-color: rgb(39, 196, 115);
+  background-color: #27c473;
+  border-color: #27c473;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-secondary-color {
-  color: rgb(39, 196, 115);
+  color: #27c473;
 }
 
 .has-success-color,
