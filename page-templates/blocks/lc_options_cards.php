@@ -10,14 +10,24 @@
             the_row();
             $link = get_sub_field('card_link');
             ?>
+
             <div class="options_cards__card">
-                <h3><?=get_sub_field('card_title')?>
-                </h3>
-                <div class="options_cards__intro">
-                    <?=get_sub_field('card_intro')?>
+                <div class="options_cards__inner">
+                    <div class="options_cards__front">
+                        <div>
+                            <?=get_sub_field('card_title')?>
+                        </div>
+                    </div>
+                    <div class="options_cards__back">
+                        <h3><?=get_sub_field('card_title')?>
+                        </h3>
+                        <div class="options_cards__intro">
+                            <?=get_sub_field('card_intro')?>
+                        </div>
+                        <a class="btn btn-secondary"
+                            href="<?=$link['url']?>"><?=$link['title']?></a>
+                    </div>
                 </div>
-                <a class="btn btn-primary"
-                    href="<?=$link['url']?>"><?=$link['title']?></a>
             </div>
             <?php
         }

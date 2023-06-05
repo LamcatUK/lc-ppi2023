@@ -26,12 +26,13 @@ while (have_posts()) {
     the_post();
     if ($wp_query->current_post == 0 && !is_paged()) {
         ?>
-                <div class="latest_insights__card--first"
+                <a class="latest_insights__card--first"
+                    href="<?=get_the_permalink()?>"
                     style="background-image:url(<?=get_the_post_thumbnail_url(get_the_ID(), 'large')?>">
                     <div class="overlay"></div>
                     <h2><?=get_the_title()?></h2>
                     <p><?=wp_trim_words(get_the_content(), 20)?></p>
-                </div>
+                </a>
                 <?php
     } else {
         ?>

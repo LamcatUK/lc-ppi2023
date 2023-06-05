@@ -39,6 +39,10 @@
         padding: 1rem;
         border-radius: var(--border-2);
         display: grid;
+        h3, h2 {
+            font-size: var(--fs-450);
+            color: var(--col-primary);
+        }
     }
     img {
         margin-bottom: 0.5rem;
@@ -48,10 +52,7 @@
         object-fit: cover;
         object-position: center;
     }
-    h3, h2 {
-        font-size: var(--fs-450);
-        color: var(--col-primary);
-    }
+
     .btn {
         align-self: end;
         justify-self: self-start;
@@ -72,6 +73,9 @@
         position: relative;
         isolation: isolate;
         overflow: hidden;
+        &:hover {
+            color: #fff;
+        }
         h2 {
             font-size: var(--fs-700);
             color: #fff;

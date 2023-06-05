@@ -92,7 +92,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -108,20 +108,20 @@
                     "label": "Card Intro",
                     "name": "card_intro",
                     "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
+                    "type": "text",
+                    "instructions": "(max 80 chars)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
                     "default_value": "",
                     "maxlength": "",
-                    "rows": 2,
                     "placeholder": "",
-                    "new_lines": "",
+                    "prepend": "",
+                    "append": "",
                     "parent_repeater": "field_647a40e0a6f06"
                 },
                 {
@@ -162,5 +162,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685733715
+    "modified": 1685987075
 }
