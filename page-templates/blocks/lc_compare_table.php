@@ -24,7 +24,7 @@ $class = get_field('center')[0] ?? null;
             </div>
             <div class="compare_table__rows">
                 <?php
-            while (have_rows('rows')) {
+            while (have_rows('rows', 'options')) {
                 the_row();
                 ?>
                 <div class="compare_table__row">
@@ -45,17 +45,17 @@ $class = get_field('center')[0] ?? null;
         </div>
         <div class="compare_table__summary">
             <div class="compare_table__summary_title">
-                <?=get_field('summary_title')?>
+                <?=get_field('summary_title', 'options')?>
             </div>
             <div class="compare_table__summary_ea">
                 <img
                     src="<?=get_stylesheet_directory_uri()?>/img/ea-logo.svg">
-                £<?=number_format(get_field('ea_total'))?>
+                £<?=number_format(get_field('ea_total', 'options'))?>
             </div>
             <div class="compare_table__summary_ppi">
                 <img
                     src="<?=get_stylesheet_directory_uri()?>/img/ppi-logo--wo.svg">
-                £<?=number_format(get_field('ppi_total'))?>
+                £<?=number_format(get_field('ppi_total', 'options'))?>
             </div>
         </div>
     </div>

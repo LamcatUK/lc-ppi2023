@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
+            "message": "Areas defined in Site-Wide Settings.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -59,26 +59,6 @@
             "rows": "",
             "placeholder": "",
             "new_lines": "wpautop"
-        },
-        {
-            "key": "field_647c88ff97f68",
-            "label": "Areas",
-            "name": "areas",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "One per line.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": "br"
         }
     ],
     "location": [
@@ -99,5 +79,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685883505
+    "modified": 1686079834
 }

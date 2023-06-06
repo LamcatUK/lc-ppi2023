@@ -7,7 +7,7 @@
                     <?=get_field('content')?>
                 </div>
                 <ul class="areas__areas">
-                    <?=lc_list(get_field('areas'))?>
+                    <?=lc_list(get_field('areas', 'options'))?>
                 </ul>
             </div>
             <div class="areas__map">

@@ -1,8 +1,12 @@
+<?php
+$title = get_field('title') ?: get_field('pushthrough_cta_title', 'options');
+$content = get_field('content') ?: get_field('pushthrough_cta_content', 'options');
+?>
 <section class="pushthrough">
     <div class="pushthrough__intro">
         <div class="container-xl py-5">
-            <h2><?=get_field('title')?></h2>
-            <div><?=get_field('content')?></div>
+            <h2><?=$title?></h2>
+            <div><?=$content?></div>
         </div>
     </div>
     <div class="pushthrough__form">

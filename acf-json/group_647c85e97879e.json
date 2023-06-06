@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
+            "message": "Leave fields blank to use defaults defined in Site-Wide Settings.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -79,5 +79,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685882375
+    "modified": 1686079768
 }
