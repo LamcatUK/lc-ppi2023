@@ -49,5 +49,13 @@ footer {
     font-size: var(--fs-200);
     a {
         color: #fff;
+        transition: var(--transition);
+        &:hover {
+            color: #fff;
+            opacity: 0.6;
+        }
+        &::after{
+            content: "" !important;
+        }
     }
 }

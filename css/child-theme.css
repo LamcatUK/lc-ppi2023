@@ -22464,6 +22464,14 @@ footer #footer-content {
 }
 .colophon a {
   color: #fff;
+  transition: var(--transition);
+}
+.colophon a:hover {
+  color: #fff;
+  opacity: 0.6;
+}
+.colophon a::after {
+  content: "" !important;
 }
 
 .btn, .wpcf7 input[type=submit] {
