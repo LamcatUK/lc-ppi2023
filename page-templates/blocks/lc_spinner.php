@@ -3,7 +3,8 @@ $bg = get_field('theme') == 'dark' ? 'bg--primary' : '';
 ?>
 <section class="spinner py-5 <?=$bg?>">
     <div class="container-xl">
-        <h2><?=get_field('title')?></h2>
+        <h2 class="text-center">
+            <?=get_field('title')?></h2>
         <div class="spinner__container">
             <?php
         while (have_rows('stats')) {
