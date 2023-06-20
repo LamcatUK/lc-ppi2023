@@ -24,8 +24,14 @@
                         <div class="options_cards__intro">
                             <?=get_sub_field('card_intro')?>
                         </div>
+                        <?php
+                        if ($link ?? null) {
+                            ?>
                         <a class="btn btn-secondary"
                             href="<?=$link['url']?>"><?=$link['title']?></a>
+                        <?php
+                        }
+            ?>
                     </div>
                 </div>
             </div>
