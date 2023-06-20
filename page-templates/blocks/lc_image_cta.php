@@ -1,5 +1,6 @@
 <?php
 $img = wp_get_attachment_image_url(get_field('background'), 'full');
+$btn = random_str(4);
 ?>
 <section class="image_cta py-5"
     style="background-image:url(<?=$img?>)">
@@ -16,12 +17,31 @@ $img = wp_get_attachment_image_url(get_field('background'), 'full');
             </ul>
             <div class="row g-3 align-items-center">
                 <div class="col-md-auto">
-                    <input type="text" class="form-control" name="postcode" id="postcode" placeholder="Enter Postcode">
+                    <input type="text" class="form-control" name="postcode"
+                        id="postcode_<?=$btn?>"
+                        placeholder="Enter Postcode">
                 </div>
                 <div class="col-md-auto">
-                    <button class="btn btn-secondary w-100 w-md-auto">Get Free Cash Offer</button>
+                    <button class="btn btn-secondary w-100 w-md-auto"
+                        id="btn_<?=$btn?>">Get Free Cash
+                        Offer</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<?php
+add_action('wp_footer', function () use ($btn) {
+    ?>
+<script>
+    document.getElementById('btn_<?=$btn?>').addEventListener('click',
+        function() {
+            var postCode = document.getElementById('postcode_<?=$btn?>')
+                .value;
+            var loca = '/get-cash-offer/?post-code=' + postCode;
+            window.location.href = loca;
+        });
+</script>
+<?php
+});
+?>
