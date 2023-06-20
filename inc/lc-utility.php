@@ -35,6 +35,12 @@ add_shortcode('contact_phone', function () {
     }
     return;
 });
+add_shortcode('contact_phone2', function () {
+    if (get_field('phone_2', 'options')) {
+        return '<a href="tel:' . parse_phone(get_field('phone_2', 'options')) . '">' . get_field('phone_2', 'options') . '</a>';
+    }
+    return;
+});
 
 function social_icons()
 {

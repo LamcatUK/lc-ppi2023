@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6478d1fefc8bb",
-            "label": "General",
+            "label": "Analytics",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -18,46 +18,6 @@
             },
             "placement": "top",
             "endpoint": 0
-        },
-        {
-            "key": "field_6478d207fc8bc",
-            "label": "Contact Phone",
-            "name": "contact_phone",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6478d212fc8bd",
-            "label": "Contact Email",
-            "name": "contact_email",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
         },
         {
             "key": "field_6478d21cfc8be",
@@ -664,5 +624,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686080544
+    "modified": 1687288173
 }

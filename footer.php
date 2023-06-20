@@ -33,6 +33,9 @@ defined('ABSPATH') || exit;
                     <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
                         <?=do_shortcode('[contact_phone]')?>
                     </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                        <?=do_shortcode('[contact_phone2]')?>
+                    </li>
                     <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
                         <?=do_shortcode('[contact_email]')?>
                     </li>
