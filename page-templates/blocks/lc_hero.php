@@ -12,7 +12,7 @@
                     $style = get_field('cta_style');
                     if (get_field('is_calendly1')) {
                     ?>
-                    <button type="button" class="btn btn-<?=$style?>" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal">Book Valuation</button>
+                    <button type="button" class="btn btn-<?=$style?>" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal"><?=$link['title']?></button>
                     <?php
                     }
                     else {
