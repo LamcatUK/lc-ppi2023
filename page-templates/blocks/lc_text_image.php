@@ -54,10 +54,17 @@ if (get_field('order') == 'image-text') {
                     <?php
                 if (get_field('cta')) {
                     $link = get_field('cta');
-                    ?>
+                    if (get_field('is_calendly')) {
+                        ?>
+                    <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal"
+                        data-bs-target="#valuationModal"><?=$link['title']?></button>
+                    <?php
+                    } else {
+                        ?>
                     <a href="<?=$link['url']?>"
                         class="btn btn-secondary"><?=$link['title']?></a>
                     <?php
+                    }
                 }
                 if (get_field('cta_2')) {
                     $link = get_field('cta_2');

@@ -9,9 +9,16 @@
                     <?php
                     if (get_field('cta_1')) {
                         $link = get_field('cta_1');
+                        if (get_field('is_calendly')) {
+                            ?>
+                            <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal"><?=$link['title']?></button>
+                            <?php            
+                        }
+                        else {
                         ?>
                     <a href="<?=$link['url']?>" target="<?=$link['target']?>" class="btn btn-secondary"><?=$link['title']?></a>
                         <?
+                        }
                     }
                     if (get_field('cta_2')) {
                         $link = get_field('cta_2');

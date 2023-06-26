@@ -51,6 +51,8 @@ defined('ABSPATH') || exit;
             <div class="col-sm-6 col-lg-2 mb-2">
                 <strong>Information</strong>
                 <?php wp_nav_menu(array('theme_location' => 'footer_menu2')); ?>
+                <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal"
+                    data-bs-target="#valuationModal">Book Valuation</button>
             </div>
         </div>
     </div>
@@ -71,7 +73,32 @@ defined('ABSPATH') || exit;
     </div>
 </div>
 </div><!-- #page -->
-<?php wp_footer();
+<!-- modal -->
+<div class="modal fade" id="valuationModal" tabindex="-1" aria-labelledby="valuationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="valuationModalLabel">Book a Valuation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/book-instant-valuation"
+                    style="min-width:320px;height:700px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+add_action('wp_footer', function () {
+    ?>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<?php
+});
+
+wp_footer();
+
+
 if (get_field('gtm_property', 'options')) {
     ?>
 <!-- Google Tag Manager (noscript) -->

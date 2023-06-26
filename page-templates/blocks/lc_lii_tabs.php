@@ -40,9 +40,16 @@
                         <?php
                         if (get_field('landlords_cta_1')) {
                             $link = get_field('landlords_cta_1');
+                            if (get_field('is_calendly_landlords')) {
+                                ?>
+                                <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal"><?=$link['title']?></button>
+                                <?php            
+                            }
+                            else {
                             ?>
                             <a href="<?=$link['url']?>" target="<?=$link['target']?>" class="btn btn-secondary"><?=$link['title']?></a>
                             <?
+                            }
                         }
                         if (get_field('landlords_cta_2')) {
                             $link = get_field('landlords_cta_2');
@@ -77,9 +84,16 @@
                         <?php
                         if (get_field('investors_cta_1')) {
                             $link = get_field('investors_cta_1');
-                            ?>
+                            if (get_field('is_calendly_investors')) {
+                                ?>
+                                <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal"><?=$link['title']?></button>
+                                <?php            
+                            }
+                            else {
+                                ?>
                             <a href="<?=$link['url']?>" target="<?=$link['target']?>" class="btn btn-secondary"><?=$link['title']?></a>
                             <?
+                            }
                         }
                         if (get_field('investors_cta_2')) {
                             $link = get_field('investors_cta_2');
@@ -114,9 +128,16 @@
                         <?php
                         if (get_field('individuals_cta_1')) {
                             $link = get_field('individuals_cta_1');
+                            if (get_field('is_calendly_individuals')) {
+                                ?>
+                                <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal"><?=$link['title']?></button>
+                                <?php            
+                            }
+                            else {
                             ?>
                             <a href="<?=$link['url']?>" target="<?=$link['target']?>" class="btn btn-secondary"><?=$link['title']?></a>
                             <?
+                                }
                         }
                         if (get_field('individuals_cta_2')) {
                             $link = get_field('individuals_cta_2');

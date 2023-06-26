@@ -22,7 +22,8 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="/book-valuation" class="btn btn-secondary w-100 w-md-auto">Free Valuation</a>
+            <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal"
+                data-bs-target="#valuationModal">Free Valuation</button>
         </div>
     </div>
 </section>
