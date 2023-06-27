@@ -6,9 +6,13 @@ footer {
         max-width: 180px;
         margin-bottom: 1rem;
     }
+    font-size: var(--fs-200);
+    .btn {
+        font-size: var(--fs-200);
+    }
 
     strong {
-        font-size: var(--fs-450);
+        font-size: var(--fs-400);
         margin-bottom: 0.5rem;
         display: inline-block;
     }
@@ -26,7 +30,7 @@ footer {
     }
 
     li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
     }
 
     a {
@@ -46,7 +50,7 @@ footer {
 .colophon {
     background-color: var(--col-primary);
     color: #fff;
-    font-size: var(--fs-200);
+    font-size: var(--fs-100);
     a {
         color: #fff;
         transition: var(--transition);

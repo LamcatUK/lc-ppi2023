@@ -60,11 +60,11 @@ defined('ABSPATH') || exit;
 <div class="colophon">
     <div class="container-xl py-2">
         <div class="row">
-            <div class="col-md-6 mb-2 mb-md-0">
+            <div class="col-md-7 mb-2 mb-md-0">
                 &copy; <?=date('Y')?> Property
                 Portfolio Investors Ltd. Registered in England No. 14841867
             </div>
-            <div class="col-md-6 text-md-end">
+            <div class="col-md-5 text-md-end">
                 <a href="/privacy-policy/">Privacy Policy</a> | <a href="/cookie-policy/">Cookie Policy</a>
                 | Site by <a href="https://www.lamcat.co.uk/" rel="nofollow noopener" target="_blank" class="lc"
                     title="Site by Lamcat">Lamcat</a>

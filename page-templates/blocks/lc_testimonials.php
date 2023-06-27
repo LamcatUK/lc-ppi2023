@@ -13,8 +13,9 @@
                 ?>
             <div class="testimonials__card">
                 <div class="testimonials__inner">
-                    <h4><?=get_field('title', get_the_ID())?>
-                    </h4>
+                    <div class="h4">
+                        <?=get_field('title', get_the_ID())?>
+                    </div>
                     <p><?=get_the_content()?></p>
                     <div><strong><?=get_the_title()?></strong>,
                         <?=get_field('location', get_the_ID())?>

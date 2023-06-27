@@ -11,10 +11,14 @@
         background-repeat: no-repeat;
         background-position: top left;
         aspect-ratio: 3 / 1;
-        width: 180px;
+        width: 160px;
     }
 
     font-weight: var(--fw-600);
+
+    .btn {
+        font-size: var(--fs-200);
+    }
 
     .nav-link {
         color: var(--col-grey-900);

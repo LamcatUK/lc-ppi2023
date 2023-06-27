@@ -43,6 +43,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
     font-weight: var(--fw-900);
     font-style: normal;
     margin-bottom: 1rem;
+    text-wrap: balance;
     span {
         color: var(--col-primary);
     }

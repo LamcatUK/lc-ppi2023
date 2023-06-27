@@ -12,16 +12,16 @@
         ?>
         <ul class="nav nav-tabs" id="liiTab" role="tablist">
             <li class="" role="presentation">
-                <button class="lii_tab active" id="landlords-tab" data-bs-toggle="tab" data-bs-target="#landlords"
-                    type="button" role="tab" aria-controls="landlords" aria-selected="true">Landlords</button>
+                <h4 class="lii_tab active" id="landlords-tab" data-bs-toggle="tab" data-bs-target="#landlords"
+                    type="button" role="tab" aria-controls="landlords" aria-selected="true">Landlords</h4>
             </li>
             <li class="" role="presentation">
-                <button class="lii_tab" id="investors-tab" data-bs-toggle="tab" data-bs-target="#investors"
-                    type="button" role="tab" aria-controls="investors" aria-selected="false">Investors</button>
+                <h4 class="lii_tab" id="investors-tab" data-bs-toggle="tab" data-bs-target="#investors"
+                    type="button" role="tab" aria-controls="investors" aria-selected="false">Investors</h4>
             </li>
             <li class="" role="presentation">
-                <button class="lii_tab" id="individuals-tab" data-bs-toggle="tab" data-bs-target="#individuals"
-                    type="button" role="tab" aria-controls="individuals" aria-selected="false">Individuals</button>
+                <h4 class="lii_tab" id="individuals-tab" data-bs-toggle="tab" data-bs-target="#individuals"
+                    type="button" role="tab" aria-controls="individuals" aria-selected="false">Individuals</h4>
             </li>
         </ul>
         <div class="tab-content accordion py-lg-5 pb-5" id="liiTabContent">

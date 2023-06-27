@@ -12,15 +12,15 @@
   --col-secondary: var(--col-green-400);
   --col-grey: #F4F8FA;
   --h-top: 92px;
-  --fs-100: clamp(0.64rem, calc(0.66rem + -0.02vw), 0.65rem);
-  --fs-200: clamp(0.80rem, calc(0.77rem + 0.17vw), 0.90rem);
+  --fs-100: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.78rem);
+  --fs-200: clamp(0.83rem, calc(0.80rem + 0.18vw), 0.94rem);
   --fs-400: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
-  --fs-450: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-  --fs-500: clamp(1.25rem, calc(1.20rem + 0.27vw), 1.41rem);
-  --fs-600: clamp(1.56rem, calc(1.49rem + 0.34vw), 1.76rem);
-  --fs-700: clamp(1.95rem, calc(1.87rem + 0.42vw), 2.20rem);
-  --fs-800: clamp(2.44rem, calc(2.33rem + 0.53vw), 2.75rem);
-  --fs-900: clamp(3.05rem, calc(2.92rem + 0.66vw), 3.43rem);
+  --fs-450: clamp(1.10rem, calc(0.96rem + 0.24vw), 1.23rem);
+  --fs-500: clamp(1.20rem, calc(1.15rem + 0.26vw), 1.35rem);
+  --fs-600: clamp(1.44rem, calc(1.38rem + 0.31vw), 1.62rem);
+  --fs-700: clamp(1.73rem, calc(1.65rem + 0.38vw), 1.94rem);
+  --fs-800: clamp(2.07rem, calc(1.98rem + 0.45vw), 2.33rem);
+  --fs-900: clamp(2.49rem, calc(2.38rem + 0.54vw), 2.80rem);
   --fw-400: 400;
   --fw-600: 500;
   --fw-900: 600;
@@ -22276,6 +22276,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
   font-weight: var(--fw-900);
   font-style: normal;
   margin-bottom: 1rem;
+  text-wrap: balance;
 }
 h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h4 span, .h99 span {
   color: var(--col-primary);
@@ -22369,7 +22370,10 @@ sup {
   background-repeat: no-repeat;
   background-position: top left;
   aspect-ratio: 3/1;
-  width: 180px;
+  width: 160px;
+}
+#wrapper-navbar .btn, #wrapper-navbar .wpcf7 input[type=submit], .wpcf7 #wrapper-navbar input[type=submit] {
+  font-size: var(--fs-200);
 }
 #wrapper-navbar .nav-link {
   color: var(--col-grey-900);
@@ -22421,13 +22425,17 @@ sup {
 footer {
   background-color: var(--col-primary);
   color: #fff;
+  font-size: var(--fs-200);
 }
 footer img {
   max-width: 180px;
   margin-bottom: 1rem;
 }
+footer .btn, footer .wpcf7 input[type=submit], .wpcf7 footer input[type=submit] {
+  font-size: var(--fs-200);
+}
 footer strong {
-  font-size: var(--fs-450);
+  font-size: var(--fs-400);
   margin-bottom: 0.5rem;
   display: inline-block;
 }
@@ -22443,7 +22451,7 @@ footer .menu {
   padding-inline-start: 0;
 }
 footer li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 footer a {
   color: #fff;
@@ -22460,7 +22468,7 @@ footer #footer-content {
 .colophon {
   background-color: var(--col-primary);
   color: #fff;
-  font-size: var(--fs-200);
+  font-size: var(--fs-100);
 }
 .colophon a {
   color: #fff;
