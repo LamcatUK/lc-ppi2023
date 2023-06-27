@@ -81,31 +81,6 @@ if (get_field('bing_site_verification', 'options')) {
 wp_head();
 ?>
 
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Property Portfolio Investors Limited",
-            "url": "https://www.propertyportfolioinvestors.com/",
-            "logo": "https://www.propertyportfolioinvestors.com/wp-content/theme/lc-ppi2023/img/ppi-logo.jpg",
-            "description": "----",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "----"
-                "addressRegion": "----",
-                "postalCode": "----",
-                "addressCountry": "UK"
-            },
-            "telephone": "+44 (0) ---",
-            "email": "info@propertyportfolioinvestors.com",
-            "sameAs": [
-                "https://twitter.com/",
-                "https://www.facebook.com/",
-                "https://www.linkedin.com/company/"
-            ]
-        }
-    </script>
-
 </head>
 
 <body <?php body_class(); ?>
@@ -128,15 +103,15 @@ do_action('wp_body_open');
                     <?php
                     wp_nav_menu(
     array(
-                            'theme_location'  => 'primary_nav',
-                            'container_class' => 'w-100',
-                            // 'container_id'    => 'primaryNav',
-                            'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
-                            'fallback_cb'     => '',
-                            'menu_id'         => 'navbarr',
-                            'depth'           => 3,
-                            'walker'          => new Understrap_WP_Bootstrap_Navwalker()
-                            )
+                                                'theme_location'  => 'primary_nav',
+                                                'container_class' => 'w-100',
+                                                // 'container_id'    => 'primaryNav',
+                                                'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
+                                                'fallback_cb'     => '',
+                                                'menu_id'         => 'navbarr',
+                                                'depth'           => 3,
+                                                'walker'          => new Understrap_WP_Bootstrap_Navwalker()
+                                                )
 );
 ?>
                 </div>
