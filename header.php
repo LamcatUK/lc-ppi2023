@@ -78,6 +78,60 @@ if (get_field('bing_site_verification', 'options')) {
     echo '<meta name="msvalidate.01" content="' . get_field('bing_site_verification', 'options') . '" />';
 }
 
+if (is_front_page()) {
+    ?>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Property Portfolio Investors",
+            "description": "Property Specialists for landlords, investors & individuals. Secure a guaranteed sale for single properties or entire portfolios with a cash offer today. We cover your legal fees and in-person valuations occur in less than 48 hours.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3 Churchill Ct, Manor Royal",
+                "addressLocality": "Crawley",
+                "postalCode": "RH10 9LU"
+            },
+            "email": "hello@portfoliopropertyinvestors.com",
+            "telephone": ["01293 222300", "020 3828 8000"],
+            "foundingDate": "2023-05-03",
+            "founder": {
+                "@type": "Person",
+                "name": "Jay Limbachia"
+            },
+            "owns": {
+                "@type": "Thing",
+                "name": "Property Portfolio Investors"
+            },
+            "areaServed": [
+                "Billingshurst",
+                "Brighton & Hove",
+                "Burgess Hill",
+                "Copthorne",
+                "Crawley",
+                "Crowborough",
+                "Croydon",
+                "Cuckfield",
+                "East Grinstead",
+                "Hassocks",
+                "Haywards Heath",
+                "Horley",
+                "Horsham",
+                "Lewes",
+                "London",
+                "Steyning",
+                "Storrington",
+                "Uckfield"
+            ],
+            "sameAs": [
+                "https://www.facebook.com/PropertyPortfolioInvestors",
+                "https://www.linkedin.com/company/property-portfolio-investors/"
+            ]
+        }
+    </script>
+    <?php
+}
+
 wp_head();
 ?>
 
@@ -102,17 +156,17 @@ do_action('wp_body_open');
                 <div class="collapse navbar-collapse" id="navbar">
                     <?php
                     wp_nav_menu(
-    array(
-                                                'theme_location'  => 'primary_nav',
-                                                'container_class' => 'w-100',
-                                                // 'container_id'    => 'primaryNav',
-                                                'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
-                                                'fallback_cb'     => '',
-                                                'menu_id'         => 'navbarr',
-                                                'depth'           => 3,
-                                                'walker'          => new Understrap_WP_Bootstrap_Navwalker()
-                                                )
-);
+                        array(
+                                                                    'theme_location'  => 'primary_nav',
+                                                                    'container_class' => 'w-100',
+                                                                    // 'container_id'    => 'primaryNav',
+                                                                    'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
+                                                                    'fallback_cb'     => '',
+                                                                    'menu_id'         => 'navbarr',
+                                                                    'depth'           => 3,
+                                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker()
+                                                                    )
+                    );
 ?>
                 </div>
             </div>
