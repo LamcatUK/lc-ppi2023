@@ -103,6 +103,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'				=> 'lc_free_areas',
+            'title'				=> __('LC Areas (Free)'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_free_areas.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'lc_calc',
             'title'				=> __('LC Calculator'),
             'category'			=> 'layout',
