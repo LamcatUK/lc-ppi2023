@@ -7,7 +7,12 @@
                     <?=get_field('content')?>
                 </div>
                 <ul class="areas__areas">
-                    <?=lc_list(get_field('areas', 'options'))?>
+                    <?php
+                    $list = explode("<br />",get_field('areas','options'));
+                    foreach ($list as $a) {
+                        echo '<li>' . $a . '</li>';
+                    }
+                    ?>
                 </ul>
             </div>
             <div class="areas__map">
