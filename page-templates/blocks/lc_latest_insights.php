@@ -17,6 +17,10 @@
                 <img src="<?=get_the_post_thumbnail_url(get_the_id(), 'large')?>"
                     alt="">
                 <h3><?=get_the_title()?></h3>
+                <div class="latest_insights__meta">
+                    <div class="latest_insights__date"><?=get_the_date('jS F, Y', get_the_ID())?></div>
+                    <div class="latest_insights__author">Property Portfolio Investors</div>
+                </div>
                 <p><?=wp_trim_words(get_the_content(), 20)?></p>
                 <a href="<?=get_the_permalink()?>"
                     class="btn btn-outline-secondary">Read more</a>
