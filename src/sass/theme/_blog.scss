@@ -7,6 +7,10 @@
         margin-bottom: 1rem;
         border-radius: var(--border-2);
     }
+    .latest_insights__meta {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .sidebar {

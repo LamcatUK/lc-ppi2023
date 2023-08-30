@@ -31,6 +31,10 @@ while (have_posts()) {
                     style="background-image:url(<?=get_the_post_thumbnail_url(get_the_ID(), 'large')?>">
                     <div class="overlay"></div>
                     <h2><?=get_the_title()?></h2>
+                    <div class="latest_insights__meta">
+                        <div class="latest_insights__date"><?=get_the_date('jS F, Y', get_the_ID())?></div>
+                        <div class="latest_insights__author">Property Portfolio Investors</div>
+                    </div>
                     <p><?=wp_trim_words(get_the_content(), 20)?></p>
                 </a>
                 <?php
@@ -40,6 +44,10 @@ while (have_posts()) {
                     <img src="<?=get_the_post_thumbnail_url(get_the_ID(), 'large')?>"
                         alt="">
                     <h2><?=get_the_title()?></h2>
+                    <div class="latest_insights__meta">
+                        <div class="latest_insights__date"><?=get_the_date('jS F, Y', get_the_ID())?></div>
+                        <div class="latest_insights__author">Property Portfolio Investors</div>
+                    </div>
                     <p><?=wp_trim_words(get_the_content(), 20)?></p>
                     <a class="btn btn-outline-secondary"
                         href="<?=get_the_permalink()?>">Read

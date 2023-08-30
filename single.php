@@ -23,9 +23,13 @@ if (function_exists('yoast_breadcrumb')) {
             <div class="col-lg-9 order-2">
                 <img src="<?=$img?>" alt="" class="blog__image">
                 <h1 class="blog__title"><?=get_the_title()?></h1>
+                <div class="latest_insights__meta">
+                    <div class="latest_insights__date"><?=get_the_date('jS F, Y', get_the_ID())?></div>
+                    <div class="latest_insights__author">Property Portfolio Investors</div>
+                </div>
                 <?php
-        $count = estimate_reading_time_in_minutes(get_the_content(), 200, true, true);
-echo $count;
+                $count = estimate_reading_time_in_minutes(get_the_content(), 200, true, true);
+                echo $count;
 
 foreach ($blocks as $block) {
     if ($block['blockName'] == 'core/heading') {
