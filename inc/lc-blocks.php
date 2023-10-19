@@ -113,10 +113,28 @@ function acf_blocks()
         ));
         acf_register_block_type(array(
             'name'				=> 'lc_calc',
-            'title'				=> __('LC Calculator'),
+            'title'				=> __('LC Calculator - Single'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/lc_calc.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_calc--portfolio',
+            'title'				=> __('LC Calculator - Portfolio'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_calc--portfolio.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_calc--double',
+            'title'				=> __('LC Calculator - Double'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_calc--double.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
