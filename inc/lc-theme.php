@@ -376,7 +376,7 @@ function add_admin_link($items, $args)
 {
     if ($args->theme_location == 'primary_nav') {
         $items .= '<li class="menu-item nav-item"><a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '" class="nav-link">' . get_field('contact_phone', 'options') . '</a></li>';
-        $items .= '<li><button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal">Book Valuation</button></li>';
+        $items .= '<li><button type="button" class="btn btn-secondary" title="Get Cash Offer" data-bs-toggle="modal" data-bs-target="#valuationModal">Get Cash Offer</button></li>';
     }
     return $items;
 }
