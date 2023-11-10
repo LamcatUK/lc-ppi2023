@@ -85,6 +85,7 @@ if (is_front_page()) {
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Property Portfolio Investors",
+            "legalName": "Property Portfolio Investors Ltd",
             "description": "Property Specialists for landlords, investors & individuals. Secure a guaranteed sale for single properties or entire portfolios with a cash offer today. We cover your legal fees and in-person valuations occur in less than 48 hours.",
             "address": {
                 "@type": "PostalAddress",
@@ -92,7 +93,7 @@ if (is_front_page()) {
                 "addressLocality": "Crawley",
                 "postalCode": "RH10 9LU"
             },
-            "email": "hello@portfoliopropertyinvestors.com",
+            "email": "hello@propertyportfolioinvestors.com",
             "telephone": ["01293 222300", "020 3828 8000"],
             "foundingDate": "2023-05-03",
             "founder": {
@@ -157,15 +158,15 @@ do_action('wp_body_open');
                     <?php
                     wp_nav_menu(
                         array(
-                                                                    'theme_location'  => 'primary_nav',
-                                                                    'container_class' => 'w-100',
-                                                                    // 'container_id'    => 'primaryNav',
-                                                                    'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
-                                                                    'fallback_cb'     => '',
-                                                                    'menu_id'         => 'navbarr',
-                                                                    'depth'           => 3,
-                                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker()
-                                                                    )
+                                                                                        'theme_location'  => 'primary_nav',
+                                                                                        'container_class' => 'w-100',
+                                                                                        // 'container_id'    => 'primaryNav',
+                                                                                        'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
+                                                                                        'fallback_cb'     => '',
+                                                                                        'menu_id'         => 'navbarr',
+                                                                                        'depth'           => 3,
+                                                                                        'walker'          => new Understrap_WP_Bootstrap_Navwalker()
+                                                                                        )
                     );
 ?>
                 </div>
