@@ -1,6 +1,7 @@
 <?php
 
-function cb_register_taxes() {
+function lc_register_taxes()
+{
 
     $args = [
         "label" => "CS Category",
@@ -22,7 +23,7 @@ function cb_register_taxes() {
         "show_in_quick_edit" => true,
         "show_in_graphql" => false,
     ];
-    register_taxonomy( "cstype", [ "case-studies" ], $args );
+    register_taxonomy("cstype", [ "case-studies" ], $args);
 
     $args = [
         "label" => "CS Region",
@@ -44,7 +45,7 @@ function cb_register_taxes() {
         "show_in_quick_edit" => true,
         "show_in_graphql" => false,
     ];
-    register_taxonomy( "csregion", [ "case-studies" ], $args );
+    register_taxonomy("csregion", [ "case-studies" ], $args);
 
     $args = [
         "label" => "Team",
@@ -66,8 +67,7 @@ function cb_register_taxes() {
         "show_in_quick_edit" => true,
         "show_in_graphql" => false,
     ];
-    register_taxonomy( "team", [ "people" ], $args );
+    register_taxonomy("team", [ "people" ], $args);
 
 }
-add_action( 'init', 'cb_register_taxes' );
-
+add_action('init', 'lc_register_taxes');

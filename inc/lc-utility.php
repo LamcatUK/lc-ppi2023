@@ -102,7 +102,7 @@ function get_vimeo_data_from_id($video_id, $data)
 }
 
 
-function cb_gutenberg_admin_styles()
+function lc_gutenberg_admin_styles()
 {
     echo '
         <style>
@@ -123,17 +123,17 @@ function cb_gutenberg_admin_styles()
         </style>
     ';
 }
-add_action('admin_head', 'cb_gutenberg_admin_styles');
+add_action('admin_head', 'lc_gutenberg_admin_styles');
 
 
 // disable full-screen editor view by default
 if (is_admin()) {
-    function cb_disable_editor_fullscreen_by_default()
+    function lc_disable_editor_fullscreen_by_default()
     {
         $script = "jQuery( window ).load(function() { const isFullscreenMode = wp.data.select( 'core/edit-post' ).isFeatureActive( 'fullscreenMode' ); if ( isFullscreenMode ) { wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'fullscreenMode' ); } });";
         wp_add_inline_script('wp-blocks', $script);
     }
-    add_action('enqueue_block_editor_assets', 'cb_disable_editor_fullscreen_by_default');
+    add_action('enqueue_block_editor_assets', 'lc_disable_editor_fullscreen_by_default');
 }
 
 
@@ -159,7 +159,7 @@ function get_the_top_ancestor_id()
     }
 }
 
-function cb_json_encode($string)
+function lc_json_encode($string)
 {
     // $value = json_encode($string);
     $escapers = array("\\", "/", "\"", "\n", "\r", "\t", "\x08", "\x0c");
@@ -169,7 +169,7 @@ function cb_json_encode($string)
     return $result;
 }
 
-function cb_time_to_8601($string)
+function lc_time_to_8601($string)
 {
     $time = explode(':', $string);
     $output = 'PT' . $time[0] . 'H' . $time[1] . 'M' . $time[2] . 'S';
@@ -228,7 +228,7 @@ function random_str(
     return implode('', $pieces);
 }
 
-function cb_social_share($id)
+function lc_social_share($id)
 {
     ob_start();
     $url = get_the_permalink($id);
@@ -294,14 +294,14 @@ function formatBytes($size, $precision = 2)
 
 
 /**
- * cb_featured_image
+ * lc_featured_image
  *
  * Returns img tag with srcset.
  *
  * @param	string $id The post ID.
  * @return	string
  */
-function cb_featured_image($id)
+function lc_featured_image($id)
 {
     $tag = get_the_post_thumbnail(
         $id,

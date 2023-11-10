@@ -108,7 +108,7 @@ function lc_dashboard_widget_display()
     <img style="width: 50%;"
         src="<?= get_stylesheet_directory_uri().'/img/lc-full.jpg'; ?>">
     <a class="button button-primary" target="_blank" rel="noopener nofollow noreferrer"
-        href="mailto:hello@lamcat.co.uk/">Contact</a>
+        href="mailto:hello@lamcat.co.uk">Contact</a>
 </div>
 <div>
     <p><strong>Thanks for choosing Lamcat!</strong></p>
@@ -376,7 +376,7 @@ function add_admin_link($items, $args)
 {
     if ($args->theme_location == 'primary_nav') {
         $items .= '<li class="menu-item nav-item"><a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '" class="nav-link">' . get_field('contact_phone', 'options') . '</a></li>';
-        $items .= '<li><button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal" data-bs-target="#valuationModal">Book Valuation</button></li>';
+        $items .= '<li><a href="/get-cash-offer/" class="btn btn-secondary" title="Get Cash Offer">Get Cash Offer</a></li>';
     }
     return $items;
 }

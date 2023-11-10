@@ -1,6 +1,6 @@
 <?php
 
-function cb_register_post_types()
+function lc_register_post_types()
 {
     /**
      * Post Type: Testimonials.
@@ -40,4 +40,4 @@ function cb_register_post_types()
     register_post_type("testimonials", $args);
 }
 
-add_action('init', 'cb_register_post_types');
+add_action('init', 'lc_register_post_types');
