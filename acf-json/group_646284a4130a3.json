@@ -395,7 +395,7 @@
             "label": "Form Block Form ID",
             "name": "form_block_form_id",
             "aria-label": "",
-            "type": "number",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -404,11 +404,9 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": 301,
-            "min": "",
-            "max": "",
+            "default_value": "",
+            "maxlength": "",
             "placeholder": "",
-            "step": "",
             "prepend": "",
             "append": ""
         },
@@ -538,8 +536,51 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_647c794497689"
+                },
+                {
+                    "key": "field_647c796a9768c",
+                    "label": "PPI Amount",
+                    "name": "ppi_amount",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_647c794497689"
                 }
             ]
+        },
+        {
+            "key": "field_647f8b20cb241",
+            "label": "Summary Title",
+            "name": "summary_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_647f8b20cb241",
@@ -565,6 +606,50 @@
             "key": "field_647c79b49768e",
             "label": "EA Total",
             "name": "ea_total",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_647c79b49768e",
+            "label": "EA Total",
+            "name": "ea_total",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_647c79c29768f",
+            "label": "PPI Total",
+            "name": "ppi_total",
             "aria-label": "",
             "type": "number",
             "instructions": "",
@@ -624,5 +709,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687288173
+    "modified": 1699973375
 }
