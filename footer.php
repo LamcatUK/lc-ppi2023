@@ -66,8 +66,7 @@ defined('ABSPATH') || exit;
             </div>
             <div class="col-md-5 text-md-end">
                 <a href="/privacy-policy/">Privacy Policy</a> | <a href="/cookie-policy/">Cookie Policy</a>
-                | Site by <a href="https://www.lamcat.co.uk/" rel="nofollow noopener" target="_blank" class="lc"
-                    title="Site by Lamcat">Lamcat</a>
+                
             </div>
         </div>
     </div>
@@ -98,6 +97,10 @@ add_action('wp_footer', function () {
 
 wp_footer();
 
+/*
+| Site by <a href="https://www.lamcat.co.uk/" rel="nofollow noopener" target="_blank" class="lc"
+                    title="Site by Lamcat">Lamcat</a>
+                    */
 
 if (get_field('gtm_property', 'options')) {
     ?>
