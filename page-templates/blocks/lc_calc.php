@@ -23,7 +23,7 @@
         </div>
         <div class="text-center">
             <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal"
-                data-bs-target="#valuationModal">Free Valuation</button>
+                data-bs-target="#valuationModal">Get Cash Offer</button>
         </div>
     </div>
 </section>

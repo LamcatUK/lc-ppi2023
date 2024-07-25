@@ -52,7 +52,7 @@ defined('ABSPATH') || exit;
                 <strong>Information</strong>
                 <?php wp_nav_menu(array('theme_location' => 'footer_menu2')); ?>
                 <button type="button" class="btn btn-secondary" title="Book Valuation" data-bs-toggle="modal"
-                    data-bs-target="#valuationModal">Book Valuation</button>
+                    data-bs-target="#valuationModal">Get Cash Offer</button>
             </div>
         </div>
     </div>
