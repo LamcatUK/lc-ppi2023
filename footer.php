@@ -97,20 +97,6 @@ add_action('wp_footer', function () {
 
 wp_footer();
 
-/*
-| Site by <a href="https://www.lamcat.co.uk/" rel="nofollow noopener" target="_blank" class="lc"
-                    title="Site by Lamcat">Lamcat</a>
-                    */
-
-if (get_field('gtm_property', 'options')) {
-    ?>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe
-        src="https://www.googletagmanager.com/ns.html?id=<?=get_field('gtm_property', 'options')?>"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<?php
-}
 ?>
 </body>
 
